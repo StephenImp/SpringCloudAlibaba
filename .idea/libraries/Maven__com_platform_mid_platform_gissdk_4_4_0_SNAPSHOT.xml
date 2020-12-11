@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.platform:mid-platform-gissdk:4.4.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/platform/mid-platform-gissdk/4.4.0-SNAPSHOT/mid-platform-gissdk-4.4.0-20200527.063430-4.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/platform/mid-platform-gissdk/4.4.0-SNAPSHOT/mid-platform-gissdk-4.4.0-20200527.063430-4-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/platform/mid-platform-gissdk/4.4.0-SNAPSHOT/mid-platform-gissdk-4.4.0-20200527.063430-4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
