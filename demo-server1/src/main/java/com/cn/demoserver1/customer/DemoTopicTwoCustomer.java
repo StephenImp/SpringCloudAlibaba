@@ -1,5 +1,6 @@
 package com.cn.demoserver1.customer;
 
+import com.cn.demoserver1.channel.Processor;
 import com.cn.demoserver1.channel.TestTopicChannel;
 import com.cn.demoserver1.channel.TestTopicChannelTwo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,8 +16,11 @@ import org.springframework.stereotype.Component;
  * @date 2020/12/11
  */
 @Component
-@EnableBinding(TestTopicChannelTwo.class)
+@EnableBinding({Processor.class,TestTopicChannelTwo.class})
 public class DemoTopicTwoCustomer {
+
+    @Autowired
+    private Processor processor;
 
     @StreamListener(TestTopicChannelTwo.INPUT)
     public void receive(String msg) {
@@ -24,6 +28,8 @@ public class DemoTopicTwoCustomer {
         //这里是流转到topicTwo的消息
         System.out.println("stream-channel-two-msg: "+msg);
 
+        //send
+        processor.output().send(MessageBuilder.withPayload(msg).build());
     }
 
 }

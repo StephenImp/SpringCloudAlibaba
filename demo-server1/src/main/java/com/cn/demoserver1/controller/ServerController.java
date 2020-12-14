@@ -11,12 +11,16 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
 
 @RefreshScope
 @RequestMapping("/server")
 @RestController
 @EnableBinding(TestTopicChannel.class)
 public class ServerController {
+
+	@Autowired
+	private RestTemplate restTemplate;
 
 	@Value("${name}")
 	private String name;

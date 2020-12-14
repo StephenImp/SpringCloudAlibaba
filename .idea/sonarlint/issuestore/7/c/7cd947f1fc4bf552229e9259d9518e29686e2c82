@@ -1,0 +1,8 @@
+
+N	java:S106"9Replace this use of System.out or System.err by a logger.(µùã§
+j
+java:S1128"HRemove this unused import 'com.cn.demoserver1.channel.TestTopicChannel'.(½Åè×ÿÿÿÿÿ8æ¤£Šå.
+u
+java:S1128"SRemove this unused import 'org.springframework.integration.support.MessageBuilder'.(‹ðÉÎüÿÿÿÿ8Ýì£Šå.
+u
+java:S1128"SRemove this unused import 'org.springframework.beans.factory.annotation.Autowired'.(¡ž¸Îùÿÿÿÿ8§Î¥Šå.

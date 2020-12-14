@@ -14,6 +14,8 @@ import org.springframework.messaging.SubscribableChannel;
  *
  * 还要注意建立topic与消费者组之间的关系
  *
+ * 应用间的通信通过输入通道（input channel）和输出通道（output channel）完成
+ *
  */
 public interface TestTopicChannel {
 
